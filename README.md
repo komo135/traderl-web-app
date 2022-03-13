@@ -17,7 +17,7 @@ streamlit run https://raw.githubusercontent.com/komo135/traderl-web-app/main/git
 ```
 pattern 2
 ```consol
-
+git clone https://github.com/komo135/traderl-web-app.git
 cd traderl-web-app
 streamlit run app.py [ARGUMENTS]
 ```
