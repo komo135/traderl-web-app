@@ -174,7 +174,7 @@ if __name__ == "__main__":
     elif select == "create agent":
         app.agent_select()
     elif select == "training":
-        app.training()
+        app.agent_train()
     elif select == "save model":
         app.model_save()
     elif select == "show results":

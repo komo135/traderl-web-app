@@ -224,7 +224,7 @@ class App:
             st.write("Agent created")
 
     def agent_train(self):
-        if agent:
+        if self.agent:
             if st.button("training"):
                 self.agent.train()
         else:
@@ -239,7 +239,7 @@ class App:
                        "please create agent")
 
     def model_save(self):
-        if agent:
+        if self.agent:
             save_name = st.text_input("save name", self.model_name)
             if st.button("model save"):
                 self.agent.model.save(save_name)
@@ -302,7 +302,7 @@ if __name__ == "__main__":
     elif select == "create agent":
         app.agent_select()
     elif select == "training":
-        app.training()
+        app.agent_train()
     elif select == "save model":
         app.model_save()
     elif select == "show results":
